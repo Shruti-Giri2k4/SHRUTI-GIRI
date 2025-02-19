@@ -1,0 +1,45 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    max-width: 300px;
+    height: 500px; /* Making it longer */
+}
+
+.card:hover {
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1; /* Expanding the body */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.card-footer {
+    background-color: white;
+    border-top: none;
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: bold;
+}

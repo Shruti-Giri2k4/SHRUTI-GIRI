@@ -1,0 +1,30 @@
+body {
+    background-color: #f5f5f5;
+}
+
+/* Red border for invalid fields */
+.input-group .form-control:invalid {
+    border: 2px solid red;
+}
+
+/* Green border for valid fields */
+.input-group .form-control:valid {
+    border: 2px solid green;
+}
+
+/* Error message styling */
+.invalid-feedback {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+}
+
+/* Show error message only when the field is invalid and touched */
+.was-validated .form-control:invalid ~ .invalid-feedback {
+    display: block;
+}
+
+/* Hide error message when the field becomes valid */
+.was-validated .form-control:valid ~ .invalid-feedback {
+    display: none;
+}
